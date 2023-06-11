@@ -1,0 +1,242 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.title-reset {
+  padding: 0;
+  margin: 0;
+}
+
+.descr-reset {
+  padding: 0;
+  margin: 0;
+}
+
+%bg-image {
+  background: {
+    size: contain;
+    position: center;
+    repeat: no-repeat;
+  };
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+$white: #fff;
+$yellow-orange: FFB548;
+
+.header {
+  padding: 22px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__select {
+    font: {
+      weight: 700;
+      size: 12px;
+    }
+    line-height: 16px;
+    color: $white;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.select {
+  &__lang {
+    background-color: rgba(0, 0, 0, 0.75);
+    outline: none;
+    border-radius: 3px;
+  }
+}
+
+.nav {
+  &__link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: $white;
+    text-transform: uppercase;
+  }
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.hero {
+  padding: 315px 0 450px;
+  height: 100vh;
+  text-align: center;
+  background: {
+    image: url('/img/hero_bg.jpg');
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  };
+  &__title {
+    font: {
+      weight: 700;
+      size: 80px
+    }
+    margin-bottom: 10px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__descr {
+    font: {
+      weight: 700;
+      size: 24px;
+    }
+    margin-bottom: 30px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: $white;
+  }
+  &__btn {
+    font: {
+      weight: 700;
+      size: 16px;
+    }
+    padding: 20px 17px;
+    line-height: 22px;
+    color: #1A1917;
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  }
+  &__price {
+    font: {
+      weight: 700;
+      size: 16px;
+    }
+    line-height: 22px;
+    color: #1A1917;
+  }
+
+}
+
+.games {
+  &__icon {
+    width: 30px;
+    height: 30px;
+    @extend %bg-image;
+    &--xbox {
+      margin-right: 17px;
+      background-image: url('/img/xbox.svg');
+    }
+    &--steam {
+      background-image: url('/img/steam.svg');
+    }
+  }
+}
+
+.about {
+  position: relative;
+  padding: 255px 0;
+  background-image: url('/img/about_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font: {
+      weight: 700;
+      size: 24px;
+    }
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: $white;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 75px;
+    max-width: 70%;
+    font: {
+      weight: 700;
+      size: 80px;
+    }
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__title::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 120%;
+    height: 3px;
+    background-color: $white;
+  }
+
+  &__descr {
+    padding-left: 250px;
+    max-width: 63%;
+    font: {
+      weight: 400;
+      size: 18px;
+    }
+    line-height: 22px;
+    color: $white;
+  }
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%);
+}
+
+

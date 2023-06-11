@@ -1,0 +1,205 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.title-reset {
+  padding: 0;
+  margin: 0;
+}
+
+.descr-reset {
+  padding: 0;
+  margin: 0;
+}
+
+.games__icon {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 22px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.header__container {
+  align-items: center;
+  justify-content: space-between;
+}
+.header__select {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+}
+
+.select__lang {
+  background-color: rgba(0, 0, 0, 0.75);
+  outline: none;
+  border-radius: 3px;
+}
+
+.nav__link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.hero {
+  padding: 315px 0 450px;
+  height: 100vh;
+  text-align: center;
+  background-image: url("/img/hero_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 80px;
+  margin-bottom: 10px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.hero__descr {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 30px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.hero__btn {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 20px 17px;
+  line-height: 22px;
+  color: #1A1917;
+  border-radius: 4px;
+  border: none;
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+}
+.hero__price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1917;
+}
+
+.games__icon {
+  width: 30px;
+  height: 30px;
+}
+.games__icon--xbox {
+  margin-right: 17px;
+  background-image: url("/img/xbox.svg");
+}
+.games__icon--steam {
+  background-image: url("/img/steam.svg");
+}
+
+.about {
+  position: relative;
+  padding: 255px 0;
+  background-image: url("/img/about_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about__subtitle {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.about__title {
+  position: relative;
+  margin-bottom: 75px;
+  max-width: 70%;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.about__title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 120%;
+  height: 3px;
+  background-color: #fff;
+}
+.about__descr {
+  padding-left: 250px;
+  max-width: 63%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%);
+}/*# sourceMappingURL=style.css.map */
